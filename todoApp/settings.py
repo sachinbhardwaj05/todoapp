@@ -26,7 +26,7 @@ SECRET_KEY = '8)810zj@#^2xp=1=2rkozbv8#)gub6m1a^9qf&)d-9&x9*c2a_'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'kstodoapp.herokuapp.com'
+    'kstodoapp.herokuapp.com','127.0.0.1'
 
 ]
 
@@ -34,13 +34,14 @@ ALLOWED_HOSTS = [
 # Application definition
 
 INSTALLED_APPS = [
-    'todos.apps.TodosConfig',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todos.apps.TodosConfig',
 ]
 
 MIDDLEWARE = [
